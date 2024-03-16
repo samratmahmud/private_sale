@@ -6,12 +6,14 @@ import {Inter, Outfit} from "next/font/google";
 const inter = Inter({
    subsets: ["latin"],
    weight: ["400", "500", "600", "700"],
+   display: "swap",
    variable: "--font-inter",
 });
 const outfit = Outfit({
    subsets: ["latin"],
    weight: ["400", "500", "600", "700"],
-   variable: "--font-inter",
+   display: "swap",
+   variable: "--font-outfit",
 });
 
 export const metadata: Metadata = {

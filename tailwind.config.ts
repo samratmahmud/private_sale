@@ -1,4 +1,5 @@
 import type {Config} from "tailwindcss";
+import {fontFamily} from "tailwindcss/defaultTheme";
 
 const config: Config = {
    content: [
@@ -10,18 +11,23 @@ const config: Config = {
       extend: {
          colors: {
             primary: {
-               "400": "#7C75FF",
                "600": "#5200FF",
             },
-            gray: {"50": "#ffffff", "100": "#FCFFFF"},
+            gray: {
+               "50": "#ffffff",
+               "100": "#FCFFFF",
+               "800": "#0B0C19",
+               "950": "#020202",
+            },
             neutral: {"200": "#E8E8E8"},
             red: {"600": "#FF0000"},
             amber: {"300": "#EEBE44", "600": "#D97D24"},
             emerald: {"600": "#00A478"},
+            indigo: {"400": "#7C75FF"},
          },
          fontFamily: {
-            inter: "var(--font-inter)",
-            outfit: "var(--font-outfit)",
+            inter: ["var(--font-inter)", ...fontFamily.sans],
+            outfit: ["var(--font-outfit)", ...fontFamily.sans],
          },
       },
       fontSize: {
@@ -58,7 +64,7 @@ const config: Config = {
          md: "768px",
          lg: "992px",
          xl: "1200px",
-         "2xl": "1400px",
+         "2xl": "1362px",
       },
    },
    plugins: [],

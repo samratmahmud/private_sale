@@ -11,16 +11,12 @@ html {
 }
 
 body {
-   @apply font-inter;
+   @apply font-inter text-xl text-white;
 }
 
 @layer components {
    a {
       @apply no-underline;
-   }
-
-   a:hover {
-      @apply underline underline-offset-2;
    }
 
    input,
