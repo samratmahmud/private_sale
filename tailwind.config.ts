@@ -46,7 +46,7 @@ const config: Config = {
          "8xl": ["60px", {lineHeight: "1.2em"}],
          "9xl": ["64px", {lineHeight: "0.94em"}],
       },
-      shadows: {
+      boxShadow: {
          sm: "300px 300px 300px",
          md: "0px 4px 50px #BD9EFF",
          lg: "0px 4px 4px rgba(0, 0, 0, 0.52)",
