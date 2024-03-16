@@ -2,6 +2,7 @@
 /* eslint-disable @next/next/no-img-element */
 import Button from "@/components/common/Button";
 import React from "react";
+import Timeline from "./Timeline";
 
 const brandLogo = [
    "/images/optimism-ethereum-op-logo 1.png",
@@ -11,22 +12,11 @@ const brandLogo = [
    "/images/ETH.png",
 ];
 
-const timing = [
-   {
-      name: "DAYS",
-      value: "05",
-   },
-   {
-      name: "HOURS",
-      value: "23",
-   },
-];
-
 function Header() {
    return (
       <section>
-         <div className="container mt-[100px]">
-            <h1 className="max-w-[828px] mx-auto text-8xl font-semibold text-center mb-4">
+         <div className="container mt-[100px] mb-[60px]">
+            <h1 className="max-w-[828px] mx-auto text-8xl font-semibold text-center mb-4 text-linear bg-header-title">
                Copy-trade most successful crypto whales.
             </h1>
             <p className="text-white text-center leading-[1.67em] mb-12">
@@ -37,7 +27,7 @@ function Header() {
                   <img key={index} src={logo} alt="" />
                ))}
             </div>
-            <div className="flex justify-center">
+            <div className="flex justify-center mb-12">
                <Button
                   color="white"
                   href="/"
@@ -46,18 +36,8 @@ function Header() {
                   variant="large"
                />
             </div>
-            <div className="flex gap-4">
-               {timing.map(({name, value}, index) => (
-                  <div
-                     key={index}
-                     className="flex flex-col items-center gap-[18px]"
-                  >
-                     <h3 className="text-md font-bold text-neutral-200">
-                        {name}
-                     </h3>
-                     <p className="text-8xl font-bold">{value}</p>
-                  </div>
-               ))}
+            <div>
+               <Timeline />
             </div>
          </div>
       </section>

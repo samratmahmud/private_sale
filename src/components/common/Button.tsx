@@ -7,6 +7,7 @@ interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
    color?: "primary" | "white";
    href: string;
    icon?: string;
+   iconR?: string;
 }
 
 function Button(props: ButtonProps) {
@@ -16,6 +17,7 @@ function Button(props: ButtonProps) {
       children,
       color = "primary",
       icon,
+      iconR,
       ...rest
    } = props;
 
@@ -38,6 +40,7 @@ function Button(props: ButtonProps) {
       >
          {icon && <img className="py-0.5" src={icon} alt="" />}
          {children}
+         {iconR && <img className="py-0.5" src={iconR} alt="" />}
       </Comp>
    );
 }

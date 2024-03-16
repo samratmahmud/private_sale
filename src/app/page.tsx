@@ -1,10 +1,12 @@
 import React from "react";
 import Header from "./home/Header";
+import GetEarly from "./home/GetEarly";
 
 function page() {
    return (
-      <main>
+      <main className="pb-5">
          <Header />
+         <GetEarly />
       </main>
    );
 }

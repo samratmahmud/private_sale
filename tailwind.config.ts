@@ -52,7 +52,11 @@ const config: Config = {
          lg: "0px 4px 4px rgba(0, 0, 0, 0.52)",
          xl: "200px 200px 200px",
       },
-      backgroundImage: {},
+      backgroundImage: {
+         "header-title": "linear-gradient(#fff 30%, #0B0C19 150%)",
+         "gray-black":
+            "linear-gradient(180deg, rgba(13, 13, 13, 0.20) 0%, rgba(13, 13, 13, 0.06) 100%)",
+      },
       container: {
          center: true,
          padding: {
