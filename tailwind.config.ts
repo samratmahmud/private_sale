@@ -56,6 +56,10 @@ const config: Config = {
          "header-title": "linear-gradient(#fff 30%, #0B0C19 150%)",
          "gray-black":
             "linear-gradient(180deg, rgba(13, 13, 13, 0.20) 0%, rgba(13, 13, 13, 0.06) 100%)",
+         "blue-orange": "linear-gradient(180deg, #5200FF 0%, #C732A6 100%)",
+         "blue-black":
+            "linear-gradient(180deg, #5200FF 0%, rgba(82, 0, 255, 0.10) 100%)",
+         "black-cercle": "url('/images/Group 59811.png')",
       },
       container: {
          center: true,

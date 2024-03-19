@@ -5,6 +5,7 @@ import React from "react";
 import PackageDetails from ".";
 import {ChipProps} from "./Chip";
 import Button from "@/components/common/Button";
+import Titles from "@/components/common/Titles";
 
 interface PackageListS {
    buttonName: string;
@@ -214,12 +215,12 @@ function Pricing() {
    return (
       <section>
          <div className="container mb-40">
-            <h2 className="text-7xl font-semibold text-linear bg-header-title text-center mb-4">
-               Buy $SWHALE token
-            </h2>
-            <p className="text-3xl text-center mb-20">
-               Invest into the new standart of on-chain trading
-            </p>
+            <div className="mb-20">
+               <Titles
+                  headLine="Buy $SWHALE token"
+                  describtion="Invest into the new standart of on-chain trading"
+               />
+            </div>
             <div className="max-w-[965px] mx-auto bg-[#BD9EFF]/15 rounded-[20px] py-[70px] px-[60px]">
                <h3 className="text-center text-6xl mb-10">
                   Buy in before price increases!
