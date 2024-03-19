@@ -2,6 +2,7 @@ import React from "react";
 import Header from "./home/Header";
 import GetEarly from "./home/GetEarly";
 import Pricing from "./home/pricing/Pricing";
+import Roadmap from "./home/Roadmap";
 
 function HomePage() {
    return (
@@ -9,6 +10,7 @@ function HomePage() {
          <Header />
          <GetEarly />
          <Pricing />
+         <Roadmap />
       </main>
    );
 }

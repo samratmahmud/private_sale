@@ -19,6 +19,7 @@ function PackageDetails(props: packageProps) {
             <Chip variant={variant} />
          </div>
          <button
+            onClick={handelClick}
             className={`w-full text-lg py-2.5 px-1 border  ${
                isActive
                   ? "bg-amber-600 border-amber-600"
@@ -30,7 +31,7 @@ function PackageDetails(props: packageProps) {
          {amount && (
             <p className="text-amber-600 font-bold text-2xl">{amount}</p>
          )}
-         {icons && <img className="outline w-12 h-12" src={icons} alt="" />}
+         {icons && <img className="w-6 h-6" src={icons} alt="" />}
       </div>
    );
 }

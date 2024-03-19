@@ -23,14 +23,17 @@ function Chip(props: ChipProps) {
       warning: {
          name: "Closing in April 2024",
          color: "text-amber-300 border-amber-300",
+         icon: undefined,
       },
       success: {
          name: "May 2024",
          color: "text-emerald-600 border-emerald-600",
+         icon: undefined,
       },
       primary: {
          name: "Q2 2024",
          color: "text-indigo-400 border-indigo-400",
+         icon: undefined,
       },
    };
 
