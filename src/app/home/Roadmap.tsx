@@ -38,7 +38,7 @@ function Roadmap() {
          <div className="container mb-36">
             <div>
                <Titles
-                  headLine="Roadmap"
+                  Title="Roadmap"
                   describtion="Invest into the new standart of on-chain trading"
                />
             </div>

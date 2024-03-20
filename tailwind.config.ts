@@ -16,6 +16,7 @@ const config: Config = {
             gray: {
                "50": "#ffffff",
                "100": "#FCFFFF",
+               "700": "#8A8F98",
                "800": "#0B0C19",
                "950": "#020202",
             },
@@ -60,6 +61,8 @@ const config: Config = {
          "blue-black":
             "linear-gradient(180deg, #5200FF 0%, rgba(82, 0, 255, 0.10) 100%)",
          "black-cercle": "url('/images/Group 59811.png')",
+         "blue-gray": "linear-gradient(180deg, #191919 5%, #000000 60%)",
+         "blue-border": "linear-gradient(180deg, #5200FF 1%, #000000 99%)",
       },
       container: {
          center: true,

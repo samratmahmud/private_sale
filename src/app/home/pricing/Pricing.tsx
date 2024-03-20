@@ -217,7 +217,7 @@ function Pricing() {
          <div className="container mb-40">
             <div className="mb-20">
                <Titles
-                  headLine="Buy $SWHALE token"
+                  Title="Buy $SWHALE token"
                   describtion="Invest into the new standart of on-chain trading"
                />
             </div>

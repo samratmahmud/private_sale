@@ -3,29 +3,7 @@
 import Button from "@/components/common/Button";
 import Link from "next/link";
 import React from "react";
-
-const socialSite = [
-   {
-      icon: "/images/Group 1171275108.svg",
-      url: "https://twitter.com/",
-   },
-   {
-      icon: "/images/Vector.svg",
-      url: "/",
-   },
-   {
-      icon: "/images/Discordlogo.svg",
-      url: "/",
-   },
-   {
-      icon: "/images/Discordlogo.svg",
-      url: "/",
-   },
-   {
-      icon: "/images/Vector (1).svg",
-      url: "/",
-   },
-];
+import SocialLink from "./SocialLink";
 
 const navLink = [
    {
@@ -67,17 +45,8 @@ function Navbar() {
                   <img src="/images/Logo.svg" alt="" />
                </Link>
                <div className="flex items-center gap-6">
-                  <div className="flex gap-4">
-                     {socialSite.map(({icon, url}, index) => (
-                        <Link
-                           href={url}
-                           key={index}
-                           target="_blank"
-                           className="w-6 aspect-square p-1 bg-white rounded-full flex items-center justify-center"
-                        >
-                           <img className="w-full" src={icon} alt="" />
-                        </Link>
-                     ))}
+                  <div>
+                     <SocialLink />
                   </div>
                   <Button children="Documentation" variant="small" href="/" />
                   <Button

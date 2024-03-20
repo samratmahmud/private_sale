@@ -8,12 +8,12 @@ function Tokenomics() {
          <div className="container mb-44">
             <div className="mb-[72px]">
                <Titles
-                  headLine="Tokenomics"
+                  Title="Tokenomics"
                   describtion="Invest into the new standart of on-chain trading"
                />
             </div>
-            <div className="max-w-[1240px] mx-auto bg-blue-700/10 py-14 pl-20 pr-11 flex gap-7 items-center relative">
-               <div className="absolute top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 w-full h-24 bg-primary-600/80 blur-[100px]" />
+            <div className="max-w-[1240px] mx-auto bg-blue-700/10 py-14 pl-20 pr-11 flex gap-7 items-center relative z-0">
+               <div className="absolute top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 w-full h-24 bg-primary-600/80 blur-[100px] -z-10" />
                <div>
                   <img src="/images/Frame 1171275090.png" alt="" />
                </div>

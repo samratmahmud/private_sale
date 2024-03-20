@@ -5,16 +5,18 @@ import Pricing from "./home/pricing/Pricing";
 import Roadmap from "./home/Roadmap";
 import Tokenomics from "./home/Tokenomics";
 import Utilities from "./home/Utilities";
+import BrandGroup from "./home/BrandGroup";
 
 function HomePage() {
    return (
-      <main className="pb-5">
+      <main>
          <Header />
          <GetEarly />
          <Pricing />
          <Roadmap />
          <Tokenomics />
          <Utilities />
+         <BrandGroup />
       </main>
    );
 }
